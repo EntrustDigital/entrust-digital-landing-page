@@ -1,0 +1,13 @@
+.navbar {
+    @apply fixed top-0 z-30 transition-all duration-100 border-b border-opacity-0 w-full md:h-24 h-16 flex items-center text-white;
+}
+.navbar--scroll {
+    @apply bg-white border-b border-entrust-gray-300 border-opacity-100 md:h-20 lg:text-entrust-black;
+}
+.navbar__menu {
+    @apply fixed top-0 flex flex-col w-full h-screen text-sm bg-entrust-blue  transition-all duration-100 lg:static lg:bg-transparent lg:flex-row lg:h-auto lg:space-y-0 lg:w-auto lg:ml-auto;
+    left: -100%;
+}
+.navbar__menu--active {
+    left:0;
+}

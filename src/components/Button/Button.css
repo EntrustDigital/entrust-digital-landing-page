@@ -1,0 +1,62 @@
+.btn {
+    @apply flex items-center justify-center border transition duration-300;
+}
+
+@responsive {
+    /* SIZES */
+    .btn--xs {
+        @apply py-0.5 px-1 text-xs;
+    }
+    .btn--sm {
+        @apply py-1 px-2 text-xs;
+    }
+    .btn--md {
+        @apply py-2 px-3 text-sm;
+    }
+    .btn--base {
+        @apply py-2 px-4 text-base; 
+    }
+    .btn--lg {
+        @apply py-3 px-5 text-lg;
+    }
+
+    /* COLORS */
+    .btn--blue {
+        @apply bg-entrust-blue hover:bg-entrust-blue-darker text-white font-semibold border-entrust-blue hover:border-entrust-blue-darker;
+    }
+    .btn--cyan {
+        @apply bg-entrust-cyan hover:bg-entrust-cyan-darker text-white font-semibold border-entrust-cyan hover:border-entrust-cyan-darker;
+    }
+    .btn--red {
+        @apply bg-entrust-red hover:bg-entrust-red-darker text-white font-semibold border-entrust-red hover:border-entrust-red-darker;
+    }
+    .btn--orange {
+        @apply bg-entrust-orange hover:bg-entrust-orange-darker text-white font-semibold border-entrust-orange hover:border-entrust-orange-darker;
+    }
+    .btn--white {
+        @apply bg-white hover:bg-entrust-gray-200 border-white hover:border-entrust-gray-200 text-entrust-black;
+    }
+
+
+    /* SHAPE */
+    .btn--round {
+        @apply rounded-full border flex items-center justify-center flex-shrink-0;
+    }
+
+    /* ROUND SIZES */
+    .btn--round--xs {
+        @apply h-6 w-6 text-xs;
+    }
+    .btn--round--sm {
+        @apply h-8 w-8 text-xs;
+    }
+    .btn--round--md {
+        @apply w-10 h-10 text-sm;
+    }
+    .btn--round--base {
+        @apply h-12 w-12 text-base;
+    }
+    .btn--round--lg {
+        @apply h-14 w-14 text-lg;
+    }
+}

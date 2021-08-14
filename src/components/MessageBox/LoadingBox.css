@@ -1,0 +1,5 @@
+.loading-box {
+    @apply fixed inset-0 z-50 flex flex-col items-center justify-center overflow-y-hidden transition  bg-entrust-blue;
+    max-height: 100%;
+    transition: max-height 0.3s;
+}
