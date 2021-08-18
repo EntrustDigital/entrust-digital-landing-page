@@ -107,5 +107,67 @@ export const data = {
             title:'GKIMS BY PETUAH',
             image: '/assets/img/clients/gkmis.svg'
         },
+    ],
+    expertise: [
+        {
+            title: 'React JS',
+            image: '/assets/img/expertise/reactjs.png'
+        },
+        {
+            title: 'Vue JS',
+            image: '/assets/img/expertise/vuejs.png'
+        },
+        {
+            title: 'Node JS',
+            image: '/assets/img/expertise/nodejs.png'
+        },
+        {
+            title: 'Angular JS',
+            image: '/assets/img/expertise/angularjs.png'
+        },
+        {
+            title: 'Android Native',
+            image: '/assets/img/expertise/android.png'
+        },
+        {
+            title: 'IOS Native',
+            image: '/assets/img/expertise/ios.png'
+        },
+        {
+            title: 'Spring',
+            image: '/assets/img/expertise/javaspring.png'
+        },
+        {
+            title: 'Laravel',
+            image: '/assets/img/expertise/laravel.png'
+        },
+        {
+            title: 'PHP',
+            image: '/assets/img/expertise/php.png'
+        },
+        {
+            title: 'Ruby',
+            image: '/assets/img/expertise/ruby.png'
+        },
+        {
+            title: 'Swift',
+            image: '/assets/img/expertise/swift.png'
+        },
+        {
+            title: 'Python',
+            image: '/assets/img/expertise/python.png'
+        },
+        {
+            title: 'Java',
+            image: '/assets/img/expertise/java.png'
+        },
+        {
+            title: 'ASP .NET Core',
+            image: '/assets/img/expertise/dotnet.png'
+        },
+        {
+            title: 'Golang',
+            image: '/assets/img/expertise/golang.png'
+        },
     ]
 }

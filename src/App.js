@@ -7,7 +7,9 @@ import Navbar from './components/Navbar/Navbar';
 import AboutSection from './sections/AboutSection/AboutSection';
 import ClientsSection from './sections/ClientsSection/ClientsSection';
 import ContactSection from './sections/ContactSection/ContactSection';
+import ExpertiseSection from './sections/ExpertiseSection/ExpertiseSection';
 import HeroSection from './sections/HeroSection/HeroSection';
+import PrefaceSection from './sections/PrefaceSection/PrefaceSection';
 import ReasonsSection from './sections/ReasonsSection/ReasonsSection';
 import WorkingProcessSection from './sections/WorkingProcessSection/WorkingProcessSection';
 
@@ -21,10 +23,9 @@ function App() {
     }
   }
   
-  useEffect(() => {
+  window.addEventListener('DOMContentLoaded', (event) => {
     setTimeout(()=>{setLoading(false); hideLoading();},2000)
-    
-  }, [])
+  });
 
  
 
@@ -38,9 +39,11 @@ function App() {
       <Loading/>
       <Navbar/>
       <HeroSection/>
+      <PrefaceSection/>
       <AboutSection/>
       <ReasonsSection/>
       <ClientsSection/>
+      <ExpertiseSection/>
       <ContactSection/>
       <WorkingProcessSection/>
       <Footer/>

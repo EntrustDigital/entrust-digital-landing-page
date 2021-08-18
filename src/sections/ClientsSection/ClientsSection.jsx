@@ -3,7 +3,7 @@ import BlueBackgrounds from '../../components/Backgrounds/BlueBackgrounds';
 import { data } from '../../data/data'
 
 const ClientsSection = () => {
-    const {clients} = data;
+    const { clients } = data;
     return (
         <BlueBackgrounds>
             <div className="flex flex-col responsive">
@@ -17,7 +17,7 @@ const ClientsSection = () => {
                             clients.map((client, index) =>
                                 <li data-aos="zoom-in" key={`client${index}`} className="relative">
                                     <div className="relative flex justify-center w-full overflow-hidden transition duration-200 transform shadow-md group rounded-2xl hover:shadow-lg hover:scale-105">
-                                        <div className="absolute inset-0 transition duration-300 bg-black mix-blend-color group-hover:bg-opacity-0"></div>
+                                        <div className="absolute inset-0 transition duration-300 bg-black bg-opacity-0 lg:bg-opacity-100 mix-blend-color group-hover:bg-opacity-0"></div>
                                         <img src={client.image} className="w-full " alt="" />
                                     </div>
                                 </li>

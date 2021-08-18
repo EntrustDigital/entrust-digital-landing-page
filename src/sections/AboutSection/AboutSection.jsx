@@ -25,13 +25,13 @@ const AboutSection = (props) => {
     }, [])
     return (
         <section id="about" className="general-spacing">
-            <div className="flex flex-col items-center space-y-10 lg:flex-row lg:space-x-10 xl:space-x-20 responsive">
-                <div data-aos="zoom-in-right" className="relative w-full lg:h-full lg:w-2/5 lg:flex-shrink-0">
-                    <img className={`about-image about-image--absolute z-10 -left-1/2 bottom-1/2 my-16  transform scale-110 translate-x-20`} src="/assets/img/about/about2.png" alt="" />
-                    <img className={`about-image about-image--absolute -left-1/2 top-1/2 transform`} src="/assets/img/about/about3.png" alt="" />
+            <div className="flex flex-col items-center space-y-10 lg:flex-row lg:space-y-0 responsive">
+                <div data-aos="zoom-in-left" className="relative w-full lg:h-full lg:w-2/5 lg:flex-shrink-0 lg:order-2 lg:ml-10 xl:mr-20">
+                    <img className={`about-image about-image--absolute z-10 -right-1/2 bottom-1/2 my-16  transform scale-110 translate-x-20`} src="/assets/img/about/about2.png" alt="" />
+                    <img className={`about-image about-image--absolute -right-1/2 top-1/2 transform`} src="/assets/img/about/about3.png" alt="" />
                     <img className={`about-image z-20 lg:absolute lg:top-1/2 lg:-translate-y-1/2 transform `} src="/assets/img/about/about1.png" alt="" />
                 </div>
-                <div data-aos="zoom-in-left" className="">
+                <div data-aos="zoom-in-right" className="">
                     <div className="mb-8">
                         <div  className="flex items-center mb-2 space-x-2 font-semibold text-entrust-blue">
                             <div className="w-10 h-0.5 rounded-full bg-entrust-blue"></div>
