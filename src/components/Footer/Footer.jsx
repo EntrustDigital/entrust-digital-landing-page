@@ -9,20 +9,18 @@ const Footer = () => {
 
     const footerContents = [
         {
-            header: <FullWhiteLogo className={`h-8`}/>,
+            header: <FullWhiteLogo className={`h-10`}/>,
             contents: [
-                <p className="mb-4 leading-relaxed">Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque denounce with illo inventore veritatis</p>,
+                <p className="mb-4 leading-relaxed">We provide you with our professional team which are adapt with all the latest technologies.</p>,
                 <SocialMedia/>
             ]
         },
-        {
-            header:'IT Services',
-            contents: [
-                <Link to="/" className="link-text link-text--red">Software Development</Link>,
-                <Link to="/" className="link-text link-text--red">Web Development</Link>,
-                <Link to="/" className="link-text link-text--red">Analytic Solutions</Link>
-            ]
-        },
+        // {
+        //     header:'IT Services',
+        //     contents: [
+        //         <Link to="/" className="link-text link-text--red">IT Outsourcing</Link>,
+        //     ]
+        // },
         {
             header: 'Contacts',
             contents: data.contacts.detail.map((contact, index) => 
@@ -54,7 +52,7 @@ const Footer = () => {
                 }
             </div>
             <div className="pb-6 responsive">
-                <h2 className="text-sm lg:text-center">© 2021 Entrust Digital Technology</h2>
+                <h2 className="text-sm lg:text-center">© 2021 Entrust Digital</h2>
             </div>
         </footer>
     )

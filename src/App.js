@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
@@ -9,8 +9,8 @@ import ClientsSection from './sections/ClientsSection/ClientsSection';
 import ContactSection from './sections/ContactSection/ContactSection';
 import ExpertiseSection from './sections/ExpertiseSection/ExpertiseSection';
 import HeroSection from './sections/HeroSection/HeroSection';
-import PrefaceSection from './sections/PrefaceSection/PrefaceSection';
 import ReasonsSection from './sections/ReasonsSection/ReasonsSection';
+import ServiceSection from './sections/ServiceSection/ServiceSection';
 import WorkingProcessSection from './sections/WorkingProcessSection/WorkingProcessSection';
 
 function App() {
@@ -39,8 +39,8 @@ function App() {
       <Loading/>
       <Navbar/>
       <HeroSection/>
-      <PrefaceSection/>
       <AboutSection/>
+      <ServiceSection/>
       <ReasonsSection/>
       <ClientsSection/>
       <ExpertiseSection/>

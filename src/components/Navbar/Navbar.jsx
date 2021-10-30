@@ -49,6 +49,7 @@ const Navbar = () => {
                     <div className="flex flex-col items-center justify-center h-full -mt-16 space-y-6 text-2xl font-medium text-center lg:flex-row lg:space-y-0 lg:-mt-16 lg:text-base lg:space-x-8 xl:space-x-12">
                         <span className="cursor-pointer link-text link-text--red" onClick={()=>goToSection('', setNavbarMenu)}>Home</span>
                         <span className="cursor-pointer link-text link-text--red" onClick={()=>goToSection('#about', setNavbarMenu)}>About Us</span>
+                        <span className="cursor-pointer link-text link-text--red" onClick={()=>goToSection('#service', setNavbarMenu)}>Our Service</span>
                         <span className="cursor-pointer link-text link-text--red" onClick={()=>goToSection('#reasons', setNavbarMenu)}>Why Entrust</span>
                         <span onClick={()=>goToSection('#contact', setNavbarMenu)}>
                             <Button className="rounded-md" buttonColor="red">Get in Touch</Button>

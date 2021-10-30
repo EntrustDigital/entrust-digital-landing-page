@@ -47,7 +47,7 @@ export const data = {
         {
             number: '4',
             title: 'Post Onboarding',
-            description: ['Quisque placerat vitae lacus ut scelerisque. Fusce luctus odio ac nibh luctus, in porttitor theo lacus egestas.']
+            description: ['Low Perfomance, Bad Attitude, Health Issue within a certain period can be replaced', 'Daily reports collection what tasks that in progress and done willl send to you once a month']
         },
     ],    
     contacts: {
@@ -75,6 +75,14 @@ export const data = {
         ]
     },
     clients: [
+        {
+            title:'BRI',
+            image: '/assets/img/clients/bri.png'
+        },
+        {
+            title:'BRI Agro',
+            image: '/assets/img/clients/bri-agro.png'
+        },
         {
             title:'BANK ARTHA GRAHA',
             image: '/assets/img/clients/arthagraha.svg'
@@ -110,6 +118,14 @@ export const data = {
     ],
     expertise: [
         {
+            title: 'Golang',
+            image: '/assets/img/expertise/golang.png'
+        },
+        {
+            title: 'Spring',
+            image: '/assets/img/expertise/javaspring.png'
+        },
+        {
             title: 'React JS',
             image: '/assets/img/expertise/reactjs.png'
         },
@@ -133,10 +149,7 @@ export const data = {
             title: 'IOS Native',
             image: '/assets/img/expertise/ios.png'
         },
-        {
-            title: 'Spring',
-            image: '/assets/img/expertise/javaspring.png'
-        },
+        
         {
             title: 'Laravel',
             image: '/assets/img/expertise/laravel.png'
@@ -164,10 +177,6 @@ export const data = {
         {
             title: 'ASP .NET Core',
             image: '/assets/img/expertise/dotnet.png'
-        },
-        {
-            title: 'Golang',
-            image: '/assets/img/expertise/golang.png'
         },
     ]
 }

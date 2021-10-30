@@ -12,7 +12,7 @@ const ClientsSection = () => {
                     <div className="w-10 h-0.5 rounded-full bg-entrust-red"></div>                   
                 </div>
                 <div className="flex items-center justify-center">
-                    <ul className="grid w-full max-w-3xl grid-cols-3 gap-5 md:grid-cols-4">
+                    <ul className="grid w-full max-w-3xl grid-cols-3 gap-5 md:grid-cols-5">
                         {
                             clients.map((client, index) =>
                                 <li data-aos="zoom-in" key={`client${index}`} className="relative">
