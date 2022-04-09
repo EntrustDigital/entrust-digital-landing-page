@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 const Footer = () => {
   const navigation = useNavigate()
-  const contactIcons = ['P:', 'E:', 'O:', 'A:', 'A:']
+  const contactIcons = ['P:', 'E:', 'A:', 'A:', 'O:']
   function topFunction() {
     document.body.scrollTop = 0; 
     document.documentElement.scrollTop = 0;
