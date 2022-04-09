@@ -91,7 +91,7 @@ const data = {
         subtitle: 'SERVICE',
         description: [
           <span>The business approach to information technology has changed drastically in the last decade. Both big companies and young startups reaching out for digital transformation solutions in order to keep up the rapidly-changing modern times.</span>,
-          <span><b>IT Outsourcing Service</b> are an efficient way to deliver IT solutions to any business to boost business perfomance. Many of them use our services to access proffessionals with different expertise.</span>
+          <span><b>IT Outsourcing Service</b> are an efficient way to deliver IT solutions to any business to boost business perfomance. Many of them use our services to access professionals with different expertise.</span>
         ],
         image: './assets/image/photo/service.png'
       },
