@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        font-family: 'Montserrat', sans-serif;
+    }
+    body {
+        @apply text-etd-black;
+    }
+    p {
+        @apply flex flex-col space-y-2;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+}
+@layer utilities {
+    .responsive{
+        @apply px-12 w-full max-w-lg mx-auto md:max-w-2xl md:px-0 lg:max-w-4xl xl:max-w-5xl 2xl:max-w-[78rem];
+    }
+}
+
+.react-reveal::-webkit-scrollbar {
+    display: none;
+}
+.react-reveal {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}

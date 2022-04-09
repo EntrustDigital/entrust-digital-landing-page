@@ -1,0 +1,21 @@
+.heading__wrapper {
+  @apply flex flex-col w-full max-w-lg xl:max-w-xl;
+}
+.heading__wrapper[aria-label="left"] {
+  @apply text-left items-start;
+}
+.heading__wrapper[aria-label="center"] {
+  @apply text-center items-center mx-auto;
+}
+.heading__wrapper[aria-label="right"] {
+  @apply text-right items-end;
+}
+.subheading {
+  @apply mb-2 font-semibold opacity-50 text-etd-black mt-6;
+}
+.heading {
+  @apply text-4xl font-semibold xl:text-5xl xl:leading-tight;
+  background: -webkit-linear-gradient(45deg, #1A3D73, #2063A7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
