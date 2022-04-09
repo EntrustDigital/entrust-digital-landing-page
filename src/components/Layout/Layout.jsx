@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react'
+import { useNavigate } from 'react-router-dom'
 import data from '../../utils/data'
 import BackToTop from '../BackToTop/BackToTop'
 import Footer from '../Footer/Footer'
@@ -14,6 +15,7 @@ console.warn = function filterWarnings(msg) {
 };
 
 const Layout = ({contact, children}) => {
+  const navigation = useNavigate()
   useEffect(() => {    
     window.history.scrollRestoration = 'manual'
     window.scrollTo({
