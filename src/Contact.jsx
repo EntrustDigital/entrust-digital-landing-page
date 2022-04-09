@@ -25,6 +25,7 @@ const Contact = () => {
                 <span>info@entrustdigital.co.id</span>
                 <span>Jalan Ir. H. Juanda No.109, Dago, Bandung Regency, West Java 40132</span>
                 <span>Jl. Buah Batu No. 161, Turangga, Kec. Lengkong, Bandung, West Java 40264</span>
+                <span>Opening Hours: 09:00 - 18:00'</span>
               </p>
             </div>
             <div className="flex flex-col w-full xl:w-1/3">

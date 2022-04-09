@@ -30,33 +30,34 @@ const data = {
     {
       id: 1,
       title: 'telephone',
-      description: 'WA 082115615619 / 085795962340',
+      description: 'WA (+62) 821-1561-5619 / (+62) 857-9596-2340',
       path: '/'
     },
     {
       id: 2,
       title: 'email',
-      description: 'support@entrust.com',
+      description: 'info@entrust.com',
       path: '/'
     },
     {
       id: 3,
-      title: 'operational time',
-      description: 'Opening Hours: 10:00 - 18:00',
-      path: '/'
-    },
-      {
-      id: 4,
       title: 'address',
       description: 'Jalan Ir. H. Juanda No.109, Dago, Bandung Regency, West Java 40132',
       path: '/'
     },
     {
-      id: 5,
+      id: 4,
       title: 'address',
       description: 'Jalan Buah Batu No.161, Turangga, Bandung City, West Java 40265',
       path: '/'
     },
+    {
+      id: 5,
+      title: 'operational time',
+      description: 'Opening Hours: 09:00 - 18:00',
+      path: '/'
+    },
+    
   ],
   jumbotron: {
     contact:  {
