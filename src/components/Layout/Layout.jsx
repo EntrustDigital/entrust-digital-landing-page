@@ -1,10 +1,17 @@
-import React, {useEffect, useState} from 'react'
-import { HOME_SCREEN_DATA } from '../../constants/dataContstants'
+import React, {useEffect} from 'react'
 import data from '../../utils/data'
 import BackToTop from '../BackToTop/BackToTop'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import Jumbotron from '../Jumbotron/Jumbotron'
+
+const backup = console.warn;
+console.warn = function filterWarnings(msg) {
+  const supressedWarnings = [`Warning: Can't perform a React state update on an unmounted component.`, `componentWillReceiveProps`];
+  if (!supressedWarnings.some(entry => msg.includes(entry))) {
+    backup.apply(console, arguments);
+  }
+};
 
 const Layout = ({contact, children}) => {
   useEffect(() => {    
@@ -14,6 +21,7 @@ const Layout = ({contact, children}) => {
       left: 0,
       behavior: 'instant'
     })
+   
   }, [])
 
   return (
