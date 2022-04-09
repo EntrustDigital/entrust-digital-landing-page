@@ -1,0 +1,7 @@
+.shader {
+  @apply fixed z-20 inset-0 opacity-0 bg-black transition duration-300;
+}
+
+.shader[aria-label="true"] {
+  @apply opacity-40;
+}

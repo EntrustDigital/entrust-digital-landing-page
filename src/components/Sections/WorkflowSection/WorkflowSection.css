@@ -1,0 +1,15 @@
+#workflow {
+  @apply overflow-hidden;
+}
+#workflow .swiper {
+  @apply overflow-visible pb-8 lg:hidden;
+}
+#workflow .swiper-pagination {
+  @apply absolute bottom-0 left-0 right-0 flex items-center justify-center space-x-2;
+}
+#workflow .swiper-pagination-bullet {
+  @apply h-2 w-2 rounded-full bg-etd-primary opacity-25;
+}
+#workflow .swiper-pagination-bullet-active {
+  @apply opacity-100;
+}

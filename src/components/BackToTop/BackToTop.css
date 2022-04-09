@@ -1,0 +1,12 @@
+#backToTop {
+  @apply opacity-0 transition-all duration-300;
+}
+#backToTop[aria-label="true"] {
+  @apply opacity-100;
+}
+#backToTop .spl-btn {
+  @apply fixed z-30 text-xs -rotate-90 opacity-50 bottom-64 -right-[8.6rem];
+}
+#backToTop .spl-btn__content {
+  @apply mix-blend-difference;
+}

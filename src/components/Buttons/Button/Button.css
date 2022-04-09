@@ -1,0 +1,48 @@
+.btn, .btn__content {
+  @apply relative transition duration-200  focus:outline-none ;
+}
+.btn .btn__content {
+  @apply border flex items-center justify-center relative;
+}
+.btn__color {
+  @apply absolute inset-0 opacity-0 transition duration-200;
+}
+.btn:hover .btn__color {
+  @apply opacity-100;
+}
+
+.btn--md .btn__content {
+  @apply px-10 py-5 text-xs font-semibold;
+}
+
+.btn--white {
+  @apply border-white text-white;
+}
+.btn--white .btn__color {
+  @apply bg-white;
+}
+.btn--white:hover .btn__content {
+   background: -webkit-linear-gradient(45deg, #1A3D73, #2063A7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.btn--primary .btn__content {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(45deg, #1A3D73, #2063A7) 1;
+}
+.btn--primary .btn__content span {
+  background: -webkit-linear-gradient(45deg, #1A3D73, #2063A7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.btn--primary .btn__color {
+  background: -webkit-linear-gradient(45deg, #1A3D73, #2063A7);
+}
+.btn--primary:hover .btn__content span {
+  background: -webkit-linear-gradient(45deg, #FFFFFF, #FFFFFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

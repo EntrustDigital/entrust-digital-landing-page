@@ -1,0 +1,13 @@
+.link-text {
+  background-image: linear-gradient(-90deg,#EE4823 25%,#F47E20 50%,currentColor 51%,currentColor 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position .4s ease;
+  letter-spacing: 0.1em;
+  @apply cursor-pointer
+}
+.link-text:hover, .link-text[aria-activedescendant="true"] {
+  background-position: right;
+}
