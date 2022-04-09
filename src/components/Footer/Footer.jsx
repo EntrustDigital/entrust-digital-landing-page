@@ -37,7 +37,7 @@ const Footer = () => {
             <h4 className='mb-6 text-lg font-bold'>Contact Info</h4>
             <div className="flex flex-col space-y-4 font-normal">
               {data.contacts.map((contact, idx) => (
-                  <div key={`contact${idx}`}className='flex space-x-2' onClick={() => linkOnClickHandler(contact.path)}>
+                  <div key={`contact${idx}`}className='flex space-x-2'>
                     <span className='flex items-center h-6 opacity-70'>
                       {contactIcons[idx]}
                     </span>
