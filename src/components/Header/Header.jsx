@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { RiMenu4Fill } from 'react-icons/ri'
+import { RiMenu4Fill, RiCloseLine} from 'react-icons/ri'
 import { Link, useNavigate } from 'react-router-dom'
 import data from '../../utils/data'
 import AccordionPanel from '../Accordion/AccordionPanel'
@@ -35,12 +35,16 @@ const Header = () => {
     <>
       <header className='header' aria-label={scrollDown}>
         <div className="flex flex-col px-6 lg:px-12">
-          <div className="flex items-center justify-between h-16 lg:h-20 ">
+          <div className="flex items-center justify-between h-16 lg:h-20 xl:h-24 ">
             <Link to="/" className='focus:outline-none'>
               <img className='h-6 lg:h-8' src={data.logo[0].image}/>
             </Link>
             <span className='text-2xl cursor-pointer lg:hidden' onClick={menuHandler}>
-              <RiMenu4Fill/>
+              {!menu ? (
+                <RiMenu4Fill/>
+              ) : (
+                <RiCloseLine/>
+              )}
             </span>
             <div className="hidden lg:flex">
               <NavItems/>
@@ -59,7 +63,7 @@ const Header = () => {
 const NavItems = () => {
   const navigation = useNavigate()
   return (
-    <ul className="flex flex-col py-5 space-y-4 text-xs font-bold border-t lg:border-none lg:flex-row lg:space-y-0 lg:space-x-8">
+    <ul className="flex flex-col py-6 space-y-4 text-xs font-bold border-t lg:border-none lg:flex-row lg:space-y-0 lg:space-x-8">
       {data.links.map((link) => (
         <li key={`navLink${link.id}`}>
           <LinkText href={link.path} linkActive={link.path === location.pathname}  onClick={() => navigation(link.path)}>{link.name.toUpperCase()}</LinkText>

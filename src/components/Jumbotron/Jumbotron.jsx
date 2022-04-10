@@ -8,7 +8,7 @@ function Jumbotron({data, alignItems, colorOverlay, height, buttonOnClick}) {
 
   const alignments = ['left', 'center', 'right']
   const colorOverlays = ['primary', 'white', 'none']
-  const heights = ['screen', '3/4']
+  const heights = ['screen', '3/4', 'hero']
   
   const CHECK_ITEMS_ALIGNMENTS = alignments.find(x => x === alignItems) ? alignItems : alignments[0]
   const CHECK_COLOR_OVERLAY = colorOverlays.find(x => x === colorOverlay) ? colorOverlay : colorOverlays[0]

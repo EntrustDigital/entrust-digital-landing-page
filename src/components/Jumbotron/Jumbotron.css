@@ -22,6 +22,9 @@
 .jumbotron--3\/4 {
   height: 75vh;
 }
+.jumbotron--hero {
+  @apply h-[92vh]
+}
 .jumbotron__img {
   @apply absolute inset-0 opacity-20;
 }

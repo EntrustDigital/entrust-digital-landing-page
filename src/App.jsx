@@ -17,7 +17,7 @@ function App() {
 
   return (
     <Layout contact>
-      <Jumbotron data={HOME_SCREEN_DATA.hero} buttonOnClick={() => useScrollIntoView('#about')}/>
+      <Jumbotron data={HOME_SCREEN_DATA.hero} height={'hero'} buttonOnClick={() => useScrollIntoView('#about')}/>
       <section id='about' className='w-full overflow-hidden'>
         <Fade bottom cascade>
           <div className='flex flex-col py-20 mt-20 space-y-20 2xl:py-32 md:flex-row-reverse md:space-y-0 md:responsive md:items-center'>
@@ -121,7 +121,7 @@ function App() {
             <Fade bottom cascade>
               <div className={'mt-12 flex flex-wrap justify-center max-w-2xl'}>
                 {HOME_SCREEN_DATA.client.clientList.map((clnt) => (
-                  <img key={`client${clnt.id}`} className={` -[25%] md:w-[20%] p-3 lg:w-[24%]`} src={clnt.image} alt={clnt.name}/>
+                  <img key={`client${clnt.id}`} className={`w-[25%] md:w-[20%] p-3 lg:w-[24%]`} src={clnt.image} alt={clnt.name}/>
                 ))}
               </div>
             </Fade>

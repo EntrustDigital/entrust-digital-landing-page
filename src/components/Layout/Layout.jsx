@@ -9,9 +9,8 @@ import Jumbotron from '../Jumbotron/Jumbotron'
 const backup = console.warn;
 console.warn = function filterWarnings(msg) {
   const supressedWarnings = [`Warning: Can't perform a React state update on an unmounted component.`, `componentWillReceiveProps`];
-  if (!supressedWarnings.some(entry => msg.includes(entry))) {
-    backup.apply(console, arguments);
-  }
+  if (supressedWarnings.some(entry => msg.includes(entry))) return
+  backup.apply(console, arguments)
 };
 
 const Layout = ({contact, children}) => {
@@ -30,7 +29,7 @@ const Layout = ({contact, children}) => {
     <>
       <Header/>
       <BackToTop/>
-      <main className='w-full mt-16 overflow-x-hidden lg:mt-20'>
+      <main className='w-full mt-16 overflow-x-hidden lg:mt-20 xl:mt-24'>
         {children}
         {contact ? (
           <Jumbotron 
