@@ -36,7 +36,7 @@ const data = {
     {
       id: 2,
       title: 'email',
-      description: 'info@entrust.co.id',
+      description: 'info@entrustdigital.co.id',
       path: '/'
     },
     {
