@@ -38,7 +38,7 @@ const Contact = () => {
           </section>
           <section className='flex flex-col pt-20 space-y-12 '>
             <div className="w-full xl:pt-[40%] pt-[80%] relative ">
-              <iframe className="absolute inset-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.56132492195678!2d107.61245135238312!3d-6.892851944882981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e650d9e62bbd%3A0x65d8832776980880!2sJl.%20Dago%20No.109%2C%20Lb.%20Siliwangi%2C%20Kecamatan%20Coblong%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040132!5e0!3m2!1sen!2sid!4v1649483733292!5m2!1sen!2sid" width="100%" height="100%" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe className="absolute inset-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9813788050656!2d107.61281729999999!3d-6.892830399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7efadcb9ca9%3A0xd5da984fd4d1b827!2sPT%20Entrepreneur%20Trust%20Digital!5e0!3m2!1sen!2sid!4v1682587919492!5m2!1sen!2sid" width="100%" height="100%" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </section>
         </Fade>

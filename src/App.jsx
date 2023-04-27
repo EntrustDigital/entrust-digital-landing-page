@@ -121,7 +121,7 @@ function App() {
             <Fade bottom cascade>
               <div className={'mt-12 flex flex-wrap justify-center max-w-2xl'}>
                 {HOME_SCREEN_DATA.client.clientList.map((clnt) => (
-                  <img key={`client${clnt.id}`} className={`w-[25%] md:w-[20%] p-3 lg:w-[24%]`} src={clnt.image} alt={clnt.name}/>
+                  <img key={`client${clnt.id}`} className={`w-[25%] md:w-[20%] p-3 lg:w-[24%] object-contain object-center`} src={clnt.image} alt={clnt.name} title={clnt.name}/>
                 ))}
               </div>
             </Fade>
