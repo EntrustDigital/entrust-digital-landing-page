@@ -284,8 +284,18 @@ const data = {
           },
           {
             id: 3,
-            name: 'Bank Artha Graha',
-            image: '/assets/image/clients/arthagraha.png'
+            name: 'ID Star',
+            image: '/assets/image/clients/idstar.png'
+          },
+          {
+            id: 14,
+            name: 'Bank Raya',
+            image: '/assets/image/clients/bankraya.png'
+          },
+          {
+            id: 15,
+            name: 'Mandala Finance',
+            image: '/assets/image/clients/mandala.png'
           },
           {
             id: 4,
@@ -296,6 +306,11 @@ const data = {
             id: 5,
             name: 'Sobat Teknologi',
             image: '/assets/image/clients/sobat.png'
+          },
+          {
+            id: 3,
+            name: 'Bank Artha Graha',
+            image: '/assets/image/clients/arthagraha.png'
           },
           {
             id: 6,
@@ -332,21 +347,8 @@ const data = {
             name: 'Jubelio',
             image: '/assets/image/clients/jubelio.png'
           },
-          {
-            id: 13,
-            name: 'ID Star',
-            image: '/assets/image/clients/idstar.png'
-          },
-          {
-            id: 14,
-            name: 'Bank Raya',
-            image: '/assets/image/clients/bankraya.png'
-          },
-          {
-            id: 15,
-            name: 'Mandala Finance',
-            image: '/assets/image/clients/mandala.png'
-          },
+          
+        
         ]
       }
     },
