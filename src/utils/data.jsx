@@ -288,62 +288,62 @@ const data = {
             image: '/assets/image/clients/idstar.png'
           },
           {
-            id: 14,
+            id: 4,
             name: 'Bank Raya',
             image: '/assets/image/clients/bankraya.png'
           },
           {
-            id: 15,
+            id: 5,
             name: 'Mandala Finance',
             image: '/assets/image/clients/mandala.png'
           },
           {
-            id: 4,
+            id: 6,
             name: 'Walden Global Services',
             image: '/assets/image/clients/wgs.png'
           },
           {
-            id: 5,
+            id: 7,
             name: 'Sobat Teknologi',
             image: '/assets/image/clients/sobat.png'
           },
           {
-            id: 3,
+            id: 8,
             name: 'Bank Artha Graha',
             image: '/assets/image/clients/arthagraha.png'
           },
           {
-            id: 6,
+            id: 9,
             name: 'Sophie Paris',
             image: '/assets/image/clients/sophie.png'
           },
           {
-            id: 7,
+            id: 10,
             name: 'DUA',
             image: '/assets/image/clients/dua.png'
           },
           {
-            id: 8,
+            id: 11,
             name: 'Gramedia',
             image: '/assets/image/clients/gramedia.png'
           },
           {
-            id: 9,
+            id: 12,
             name: 'Fruity',
             image: '/assets/image/clients/fruity.png'
           },
           {
-            id: 10,
+            id: 13,
             name: 'GKMIS by Petuah',
             image: '/assets/image/clients/gkmis.png'
           },
           {
-            id: 11,
+            id: 14,
             name: 'CV Jaya Sentosa Abadi',
             image: '/assets/image/clients/cvjas.png'
           },
           {
-            id: 12,
+            id: 15,
             name: 'Jubelio',
             image: '/assets/image/clients/jubelio.png'
           },
