@@ -41,8 +41,6 @@ const Footer = () => {
               <div className="flex flex-col w-full">
                 <h3 className='text-base font-medium'>Bandung office contact</h3>
                 <p className='mt-6 space-y-4 text-sm opacity-80'>
-                  <span>WA (+62) 821-1561-5619 / (+62) 857-9596-2340</span>
-                  <span>info@entrustdigital.co.id</span>
                   <span>Jalan Ir. H. Juanda No.109, Dago, Bandung Regency, West Java 40132</span>
                   <span>Jl. Buah Batu No. 161, Turangga, Kec. Lengkong, Bandung, West Java 40264</span>
                   <span>Opening Hours: 09:00 - 18:00'</span>
@@ -53,6 +51,7 @@ const Footer = () => {
                 <p className='mt-6 space-y-4 text-sm opacity-80'>
                   <span>WA (+62) 857-2496-5213</span>
                   <span>admin@entrustdigital.co.id</span>
+                  <span>info@entrustdigital.co.id</span>
                 </p>
               </div>
               <div className="flex flex-col w-full">

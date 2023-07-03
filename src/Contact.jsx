@@ -21,8 +21,6 @@ const Contact = () => {
             <div className="flex flex-col w-full xl:w-1/3">
               <h3 className='text-3xl font-medium xl:text-4xl'>Bandung office contact</h3>
               <p className='mt-4 text-sm lg:mt-6'>
-                <span>WA (+62) 821-1561-5619 / (+62) 857-9596-2340</span>
-                <span>info@entrustdigital.co.id</span>
                 <span>Jalan Ir. H. Juanda No.109, Dago, Bandung Regency, West Java 40132</span>
                 <span>Jl. Buah Batu No. 161, Turangga, Kec. Lengkong, Bandung, West Java 40264</span>
                 <span>Opening Hours: 09:00 - 18:00'</span>
@@ -33,6 +31,7 @@ const Contact = () => {
               <p className='mt-4 text-sm lg:mt-6'>
                 <span>WA (+62) 857-2496-5213</span>
                 <span>admin@entrustdigital.co.id</span>
+                <span>info@entrustdigital.co.id</span>
               </p>
             </div>
             <div className="flex flex-col w-full xl:w-1/3">
