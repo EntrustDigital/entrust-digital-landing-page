@@ -163,10 +163,6 @@ export default function Home() {
       image: '/assets/image/clients/bri.png',
     },
     {
-      name: 'BRI Agro',
-      image: '/assets/image/clients/bri_agro.png',
-    },
-    {
       name: 'Mandiri',
       image: '/assets/image/clients/mandiri.png',
     },
