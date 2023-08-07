@@ -1,3 +1,0 @@
-.accordion__panel{
-  @apply max-h-0 overflow-hidden transition-all duration-300;
-}

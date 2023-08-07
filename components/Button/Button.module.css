@@ -1,0 +1,83 @@
+.btn {
+  @apply border transition-all duration-150 font-semibold flex items-center justify-center;
+}
+
+.btn--primary.btn--filled {
+  @apply border-primary bg-primary text-white hover:bg-primary-900 hover:border-primary-900;
+}
+.btn--primary.btn--outlined {
+  @apply border-primary text-primary bg-transparent hover:bg-primary-100 ;
+}
+.btn--primary.btn--text {
+  @apply border-transparent text-primary bg-transparent hover:bg-primary-100 ;
+}
+.btn--primary.btn--outlined[aria-label="active"],
+.btn--primary.btn--text[aria-label="active"] {
+  @apply bg-primary-100 ;
+}
+
+.btn--secondary.btn--filled {
+  @apply border-secondary bg-secondary text-white hover:bg-secondary-500 hover:border-secondary-500;
+}
+.btn--secondary.btn--outlined {
+  @apply border-secondary text-secondary bg-transparent hover:bg-secondary-100 ;
+}
+.btn--secondary.btn--outlined[aria-label="active"] {
+  @apply bg-secondary-100 ;
+}
+.btn--secondary.btn--text {
+  @apply border-transparent text-secondary bg-transparent hover:bg-secondary-100 ;
+}
+
+.btn--danger.btn--filled {
+  @apply border-danger bg-danger text-white hover:bg-danger-500 hover:border-danger-500;
+}
+.btn--danger.btn--outlined {
+  @apply border-danger text-danger bg-transparent hover:bg-danger-100 ;
+}
+.btn--danger.btn--outlined[aria-label="active"] {
+  @apply bg-danger-100 ;
+}
+.btn--danger.btn--text {
+  @apply border-transparent text-danger bg-transparent hover:bg-danger-100 ;
+}
+
+.btn--gray.btn--filled {
+  @apply border-slate-500 bg-slate-500 text-white hover:bg-slate-400 hover:border-slate-400;
+}
+.btn--gray.btn--outlined {
+  @apply border-slate-500 text-slate-500 bg-transparent hover:bg-slate-100 ;
+}
+.btn--gray.btn--outlined[aria-label="active"] {
+  @apply bg-slate-100 ;
+}
+.btn--gray.btn--text {
+  @apply border-transparent text-slate-500 bg-transparent hover:bg-slate-100 ;
+}
+
+.btn[disabled="true"], .btn[disabled] {
+  @apply border-slate-200 bg-slate-200 text-slate-400 hover:bg-slate-200 hover:border-slate-200;
+}
+
+.btn--default {
+  @apply rounded-none;
+}
+.btn--rounded--normal {
+  @apply rounded;
+}
+.btn--rounded--full {
+  @apply rounded-full;
+}
+
+.btn--xs {
+  @apply py-1.5 px-2.5 text-sm;
+}
+.btn--sm {
+  @apply py-2 px-3 text-sm;
+}
+.btn--md {
+  @apply py-2.5 px-4 text-sm;
+}
+.btn--lg {
+  @apply py-3 px-5 text-sm;
+}

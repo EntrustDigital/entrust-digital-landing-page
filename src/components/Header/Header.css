@@ -1,8 +1,0 @@
-.header {
-  @apply fixed top-0 left-0 right-0 z-40 w-full bg-white transition-all duration-300 border;
-  /* box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.02); */
-}
-.header[aria-label='true'] {
-  @apply shadow-none;
-  top: -100%;
-}

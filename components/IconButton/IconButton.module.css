@@ -1,0 +1,15 @@
+.icon-btn {
+  @apply rounded-full transition-all duration-150 hover:bg-slate-100; 
+}
+.icon-btn--sm {
+  @apply text-lg py-1 px-1; 
+}
+.icon-btn--md {
+  @apply text-xl py-1.5 px-1.5; 
+}
+.icon-btn--lg {
+  @apply text-2xl py-2 px-2; 
+}
+.icon-btn--xl {
+  @apply text-3xl py-2.5 px-2.5; 
+}

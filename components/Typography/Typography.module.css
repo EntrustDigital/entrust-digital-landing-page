@@ -1,0 +1,48 @@
+.h1 {
+  @apply text-5xl lg:text-6xl font-bold leading-tight;
+}
+.h2 {
+  @apply text-4xl lg:text-5xl font-bold;
+}
+.h3 {
+  @apply text-3xl lg:text-4xl font-bold;
+}
+.h4 {
+  @apply text-2xl lg:text-3xl font-bold;
+}
+.h5 {
+  @apply text-xl lg:text-2xl font-bold;
+}
+.h6 {
+  @apply text-lg lg:text-xl font-bold;
+}
+.subtitle1 {
+  @apply text-xl lg:text-2xl;
+}
+.subtitle2 {
+  @apply text-xl lg:text-2xl opacity-80;
+}
+.subtitle3 {
+  @apply text-lg lg:text-xl;
+}
+.subtitle4 {
+  @apply text-lg lg:text-xl opacity-80;
+}
+.subtitle5 {
+  @apply text-base lg:text-lg;
+}
+.subtitle6 {
+  @apply text-base lg:text-lg opacity-80;
+}
+.body1 {
+  @apply text-sm leading-relaxed;
+}
+.body2 {
+  @apply text-sm opacity-80 leading-relaxed;
+}
+.body3 {
+  @apply text-xs leading-relaxed;
+}
+.body4 {
+  @apply text-xs opacity-80 leading-relaxed;
+}

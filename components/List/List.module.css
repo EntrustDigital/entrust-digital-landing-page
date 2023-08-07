@@ -1,0 +1,38 @@
+/* MAIN */
+.list {
+  @apply flex flex-col w-full py-2;
+}
+
+/* ITEM */
+.list__item {
+  @apply flex flex-col w-full px-4 py-2 space-y-1;
+}
+.list__item[aria-label="noPadding"] {
+  @apply py-0 px-0;
+}
+/* END ITEM */
+
+/* BTN */
+.list__item__btn {
+  @apply px-4 py-2.5 w-full transition-all duration-150 flex items-center;
+}
+.list__item__btn--default:hover, .list__item__btn[aria-label="active-default"] {
+  @apply bg-slate-100;
+}
+.list__item__btn--primary:hover, .list__item__btn[aria-label="active-primary"]{
+  @apply bg-primary-100 text-primary;
+}
+/* END BTN */
+
+/* ICON */
+.list__item__icon {
+  @apply text-xl mr-5 opacity-60 ml-0.5;
+}
+.list__item__btn[aria-label="active-primary"] .list__item__icon  {
+  @apply text-inherit;
+}
+/* END ICON */
+
+.list__subheader {
+  @apply py-2.5 px-4;
+}
