@@ -101,7 +101,7 @@ const TimelineDescription = ({
       <Typography variant='h5' className='mb-3'>
         {title}
       </Typography>
-      <Typography>
+      <Typography variant='body2'>
         {description}
       </Typography>
     </div>
