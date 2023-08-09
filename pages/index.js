@@ -179,6 +179,10 @@ export default function Home() {
       image: '/assets/image/clients/astra_int.png',
     },
     {
+      name: 'UOB',
+      image: '/assets/image/clients/uob.png',
+    },
+    {
       name: 'ID Star',
       image: '/assets/image/clients/idstar.png',
     },
