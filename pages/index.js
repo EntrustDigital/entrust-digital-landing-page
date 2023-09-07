@@ -199,14 +199,6 @@ export default function Home() {
       image: '/assets/image/clients/sobat.png',
     },
     {
-      name: 'Sophie',
-      image: '/assets/image/clients/sophie.png',
-    },
-    {
-      name: 'Dua Studio',
-      image: '/assets/image/clients/dua.png',
-    },
-    {
       name: 'Jubelio',
       image: '/assets/image/clients/jubelio.png',
     },
@@ -214,26 +206,6 @@ export default function Home() {
       name: 'Gramedia',
       image: '/assets/image/clients/gramedia.png',
       width: 64
-    },
-    {
-      name: 'Fruity',
-      image: '/assets/image/clients/fruity.png',
-      width: 84
-    },
-    {
-      name: 'Red Nose Foundation',
-      image: '/assets/image/clients/rnf.png',
-      width: 84
-    },
-    {
-      name: 'GMKIS',
-      image: '/assets/image/clients/gmkis.png',
-      width: 84
-    },
-    {
-      name: 'CV Jaya Abadi Sentosa',
-      image: '/assets/image/clients/cv_jas.png',
-      width: 72
     },
   ]
 
