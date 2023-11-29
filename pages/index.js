@@ -183,6 +183,10 @@ export default function Home() {
       image: '/assets/image/clients/uob.png',
     },
     {
+      name: 'Telkom Akses',
+      image: '/assets/image/clients/telkom-akses.webp',
+    },
+    {
       name: 'ID Star',
       image: '/assets/image/clients/idstar.png',
     },
