@@ -187,9 +187,18 @@ export default function Home() {
       image: '/assets/image/clients/telkom-akses.webp',
     },
     {
-      name: 'ID Star',
-      image: '/assets/image/clients/idstar.png',
+      name: 'Indosat',
+      image: '/assets/image/clients/indosat.png',
     },
+    {
+      name: 'Mobbi',
+      image: '/assets/image/clients/mobbi.png',
+    },
+    {
+      name: 'Nobu Bank',
+      image: '/assets/image/clients/nobu-bank.png',
+    },
+   
     {
       name: 'Mandala',
       image: '/assets/image/clients/mandala.png',
