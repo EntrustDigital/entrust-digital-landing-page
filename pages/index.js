@@ -187,6 +187,10 @@ export default function Home() {
       image: '/assets/image/clients/telkom-akses.webp',
     },
     {
+      name: 'RCTI+',
+      image: '/assets/image/clients/rcti+.webp',
+    },
+    {
       name: 'Indosat',
       image: '/assets/image/clients/indosat.png',
     },
