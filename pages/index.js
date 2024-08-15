@@ -188,7 +188,7 @@ export default function Home() {
     },
     {
       name: 'RCTI+',
-      image: '/assets/image/clients/rcti+.webp',
+      image: '/assets/image/clients/rcti+.png',
     },
     {
       name: 'Indosat',
