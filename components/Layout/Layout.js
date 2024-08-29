@@ -136,10 +136,10 @@ export default function Layout({
       </main>
 
 
-      <div className={showWaspada ? "fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 " : 'w-full'}>
-        <div className={'relative aspect-[2560/648] w-full responsive '}>
+      <div className={showWaspada ? "fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 px-5 " : 'w-full'}>
+        <div className={'relative aspect-[2560/648] w-full responsive flex items-center justify-center'}>
           {showWaspada && (
-            <button className={'text-white absolute -right-5 -top-5 text-2xl'} onClick={() => {
+            <button className={'text-white absolute -bottom-10 text-3xl'} onClick={() => {
               setShowWaspada(false),
                 cookie.set('waspada', 'done')
             }}><IoCloseCircle /></button>
