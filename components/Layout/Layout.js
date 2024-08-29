@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Logo from '../Logo/Logo'
 import IconButton from '../IconButton/IconButton'
-import {MdClose, MdMenu, MdOutlineAccessTime, MdOutlineMail, MdOutlinePhone, MdOutlinePinDrop } from 'react-icons/md'
+import { MdClose, MdMenu, MdOutlineAccessTime, MdOutlineMail, MdOutlinePhone, MdOutlinePinDrop } from 'react-icons/md'
 import Link from '../Link/Link'
 import { useRouter } from 'next/router'
 import List from '../List/List'
@@ -11,9 +11,11 @@ import ListItemText from '../ListItemText/ListItemText'
 import Typography from '../Typography/Typography'
 import data from '@/utils/data'
 import ListItemIcon from '../ListItemIcon/ListItemIcon'
-import { IoLogoLinkedin } from 'react-icons/io5'
+import { IoCloseCircle, IoLogoLinkedin } from 'react-icons/io5'
 import Button from '../Button/Button'
 import Head from 'next/head'
+import Image from 'next/image'
+import Cookie from 'js-cookie'
 
 export default function Layout({
   children,
@@ -21,9 +23,11 @@ export default function Layout({
   contactUsJumbotron = true,
   footerMargin = true
 }) {
-
+  const cookie = Cookie
   const router = useRouter()
   const [showMenu, setShowMenu] = useState(false)
+  const [showWaspada, setShowWaspada] = useState(false)
+
 
   // HANDLER
   function toggleMenu(bool) {
@@ -45,6 +49,17 @@ export default function Layout({
     },
   ]
 
+  useEffect(() => {
+
+    const waspada = cookie.get('waspada') ? false : true
+    setShowWaspada(waspada)
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    window.document.body.style.overflow = showWaspada ? 'hidden' : ''
+  }, [showWaspada])
+
   return (
     <>
       <Head>
@@ -54,28 +69,28 @@ export default function Layout({
         <div className="flex items-center justify-between responsive h-14 md:h-16">
           {/* LOGO */}
           <Link href={'/'}>
-            <Logo className='md:hidden'/>
-            <Logo className='hidden md:block' multiplier={1.2}/>
+            <Logo className='md:hidden' />
+            <Logo className='hidden md:block' multiplier={1.2} />
           </Link>
 
           {/* MOBILE MENU BUTTON */}
           <div className='-mr-2 md:hidden'>
             {showMenu ? (
               <IconButton className='' size={'lg'} onClick={() => toggleMenu(false)}>
-                <MdClose/>
+                <MdClose />
               </IconButton>
             ) : (
               <IconButton className='' size={'lg'} onClick={() => toggleMenu(true)}>
-                <MdMenu/>
+                <MdMenu />
               </IconButton>
             )}
           </div>
-          
+
           {/* DESKTOP LINKS */}
           <div className='items-center hidden space-x-6 font-medium md:flex'>
             {links.map((link, linkIdx) => (
-              <Link key={linkIdx} href={link.path} active={link.path === router.pathname }>
-                <ListItemText title={link.label}/>
+              <Link key={linkIdx} href={link.path} active={link.path === router.pathname}>
+                <ListItemText title={link.label} />
               </Link>
             ))}
           </div>
@@ -87,16 +102,16 @@ export default function Layout({
         <List>
           {links.map((link, linkIdx) => (
             <ListItem key={linkIdx} variant={'noPadding'}>
-              <Link href={link.path} onClick={toggleMenu} active={link.path === router.pathname }>
+              <Link href={link.path} onClick={toggleMenu} active={link.path === router.pathname}>
                 <ListItemButton>
-                  <ListItemText title={link.label}/>
+                  <ListItemText title={link.label} />
                 </ListItemButton>
               </Link>
             </ListItem>
           ))}
         </List>
       </nav>
-     
+
       <main className='mt-14 md:mt-16'>
         {children}
 
@@ -120,14 +135,33 @@ export default function Layout({
         )}
       </main>
 
+
+      <div className={showWaspada ? "fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 " : 'w-full'}>
+        <div className={'relative aspect-[2560/648] w-full responsive '}>
+          {showWaspada && (
+            <button className={'text-white absolute -right-5 -top-5 text-2xl'} onClick={() => {
+              setShowWaspada(false),
+                cookie.set('waspada', 'done')
+            }}><IoCloseCircle /></button>
+          )}
+          <Image
+            src={'/assets/image/waspada.png'}
+            alt={'waspada'}
+            fill
+            className={'w-full object-contain object-center'}
+          />
+        </div>
+      </div>
+
+
       <footer className={footerMargin ? 'mt-10 md:mt-20' : ''}>
         <div className="space-y-12 text-white section bg-primary">
-          
+
           <section className="flex flex-col responsive">
             <div className="flex flex-col items-start space-y-12 lg:flex-row lg:space-y-0 lg:justify-between">
-              
+
               <div className='lg:w-[28%]'>
-                <Logo variant={'secondary'} size={'md'}/>
+                <Logo variant={'secondary'} size={'md'} />
               </div>
 
               <div className='flex flex-col space-y-3  lg:w-[28%]'>
@@ -150,12 +184,12 @@ export default function Layout({
                       {contact.title}
                     </Typography>
                     {contact.list.map((item, itemIdx) => (
-                      <div 
-                        key={itemIdx} 
+                      <div
+                        key={itemIdx}
                         className='flex '
                       >
                         <ListItemIcon>
-                          {item.type === 'phone' ? <MdOutlinePhone/> : item.type === 'address' ? <MdOutlinePinDrop/>: item.type === 'email' ? <MdOutlineMail/> : <MdOutlineAccessTime/>}
+                          {item.type === 'phone' ? <MdOutlinePhone /> : item.type === 'address' ? <MdOutlinePinDrop /> : item.type === 'email' ? <MdOutlineMail /> : <MdOutlineAccessTime />}
                         </ListItemIcon>
                         <Typography>
                           {item.item}
@@ -172,7 +206,7 @@ export default function Layout({
             <div className='responsive'>
               <div className='flex flex-col items-start space-y-4'>
                 <Link href={'https://www.linkedin.com/company/pt-entrepreneur-trust-digital/'} target={`_blank`} className='text-3xl'>
-                  <IoLogoLinkedin/>
+                  <IoLogoLinkedin />
                 </Link>
                 <Typography>
                   © 2023 Entrust Digital

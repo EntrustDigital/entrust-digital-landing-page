@@ -13,27 +13,27 @@ export default function Home() {
 
   const reasons = [
     {
-      icon: <MdPeopleOutline/>,
+      icon: <MdPeopleOutline />,
       title: 'Access to Top IT Talents',
       description: `In the IT industry, talent is the most valuable resources. We deliver our best developers to implement their talent into your project.`
     },
     {
-      icon: <MdChecklist/>,
+      icon: <MdChecklist />,
       title: 'Specific in Providing IT Talent',
       description: `Having the expert on your team immediately reduces the risk of any project. Controlling and reducing the operational cost.`
     },
     {
-      icon: <MdOutlineUpgrade/>,
+      icon: <MdOutlineUpgrade />,
       title: 'Enhancing Productivity and Adaptability',
       description: `With development taken care of, you can focus your resources and company’s time on your core business or project.`
     },
     {
-      icon: <MdOutlineSpeed/>,
+      icon: <MdOutlineSpeed />,
       title: 'Speed Up Hiring Process',
       description: `By taking these module : technical skill set, soft skills, and cultural fit. Help you to scale up your team immediately.`
     },
     {
-      icon: <MdOutlineBusiness/>,
+      icon: <MdOutlineBusiness />,
       title: 'Improved Concentration on The Core Business Activities',
       description: `Keep your systems and project running whilst you focus on the big picture. Our team will help your business addressing key technology challenges.`
     },
@@ -132,7 +132,7 @@ export default function Home() {
     {
       title: `Pre-Onboarding`,
       description: [
-        
+
         [
           `Interview User`,
           `Documents Approved and Signed`,
@@ -202,7 +202,7 @@ export default function Home() {
       name: 'Nobu Bank',
       image: '/assets/image/clients/nobu-bank.png',
     },
-   
+
     {
       name: 'Mandala',
       image: '/assets/image/clients/mandala.png',
@@ -244,7 +244,7 @@ export default function Home() {
       <section className="section">
         <div className="flex flex-col space-y-6 responsive lg:flex-row lg:space-y-0 lg:space-x-10">
           <div className="flex items-center justify-center w-full p-10 bg-primary aspect-video lg:w-[48%]">
-            <Logo variant={'secondary'} size={'md'}/>
+            <Logo variant={'secondary'} size={'md'} />
           </div>
           <div className="flex flex-col p-5 bg-primary-50 lg:w-[48%] items-start">
             <Typography className='mb-2 font-semibold'>
@@ -272,7 +272,7 @@ export default function Home() {
       <section className="section">
         <div className="flex flex-col space-y-6 responsive lg:flex-row lg:space-y-0">
           <div className="relative flex-shrink-0 aspect-video lg:w-[48%] lg:order-2 lg:ml-10">
-            <Image className='object-cover object-center' src={'/assets/image/photo/service.png'} alt='service' fill/>
+            <Image className='object-cover object-center' src={'/assets/image/photo/service.png'} alt='service' fill />
           </div>
           <div className="lg:py-5">
             <Typography className='mb-2 font-semibold'>
@@ -285,7 +285,7 @@ export default function Home() {
               Over the past decade, there has been a significant shift in the business approach towards information technology. Large corporations and young startups alike are now actively seeking digital transformation solutions to stay competitive in today&apos;s fast-paced world.
             </Typography>
             <Typography variant='body2' className=''>
-            IT Outsourcing Services have emerged as a highly effective means of providing IT solutions to businesses, helping them enhance their overall performance. Many companies opt for these services as they offer access to skilled professionals with diverse expertise.
+              IT Outsourcing Services have emerged as a highly effective means of providing IT solutions to businesses, helping them enhance their overall performance. Many companies opt for these services as they offer access to skilled professionals with diverse expertise.
             </Typography>
           </div>
         </div>
@@ -305,7 +305,7 @@ export default function Home() {
                 <div className="flex items-center justify-center flex-shrink-0 w-6 h-6 mt-1 mr-3 font-semibold text-white rounded-full bg-secondary">
                   {reason?.icon}
                 </div>
-                <div  className='flex flex-col space-y-2'>                    
+                <div className='flex flex-col space-y-2'>
                   <Typography variant='h6' className=''>
                     {reason?.title}
                   </Typography>
@@ -327,7 +327,7 @@ export default function Home() {
           </Typography>
           <div className={'my-12 flex flex-wrap justify-center '}>
             {expertises.map((exp) => (
-              <Image key={`expertise${exp.id}`} className={`mb-6 w-[25%] md:w-[20%] p-3 md:p-5 lg:w-[12%]`} src={exp.image} alt={exp.name} height={120} width={120}/>
+              <Image key={`expertise${exp.id}`} className={`mb-6 w-[25%] md:w-[20%] p-3 md:p-5 lg:w-[12%]`} src={exp.image} alt={exp.name} height={120} width={120} />
             ))}
           </div>
           <Typography>
@@ -357,7 +357,7 @@ export default function Home() {
                     </Typography>
                   </div>
                 </div>
-                <div  className={`flex flex-col -mt-1 space-y-2 lg:-mt-2}`}>                    
+                <div className={`flex flex-col -mt-1 space-y-2 lg:-mt-2}`}>
                   <Typography variant='h6' className=''>
                     {flow?.title}
                   </Typography>
@@ -390,8 +390,8 @@ export default function Home() {
         </div>
       </section>
 
-       {/* CLIENTS SECTION */}
-       <section className="section">
+      {/* CLIENTS SECTION */}
+      <section className="section">
         <div className="flex flex-col items-center space-y-8 text-center md:space-y-10 lg:space-y-12 xl:space-y-16 responsive">
           <div className='w-full'>
             <Typography className='mb-2 font-semibold'>
@@ -403,15 +403,15 @@ export default function Home() {
           </div>
           <div className={'my-12 flex flex-wrap justify-center items-center'}>
             {clients.map((client, clientIdx) => (
-              <div key={clientIdx} className='flex items-center justify-center mx-5 mb-8' style={{width: 120}}>
-                <Image className={` ${client?.className || ''}`} src={client.image} alt={client.name} height={client.height||120} width={client.width || 120}/>
+              <div key={clientIdx} className='flex items-center justify-center mx-5 mb-8' style={{ width: 120 }}>
+                <Image className={` ${client?.className || ''}`} src={client.image} alt={client.name} height={client.height || 120} width={client.width || 120} />
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      
+
     </Layout>
   )
 }
