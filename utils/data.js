@@ -38,10 +38,6 @@ const data = {
       title: 'Talent Acquisition Manager Contact',
       list: [
         {
-          type: 'phone',
-          item: `WA (+62) 819-0468-6840` 
-        },
-        {
           type: 'email',
           item: `chandra.wijaya@entrustdigital.co.id` 
         },
